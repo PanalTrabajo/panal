@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col text-center">
+        {{#if usuario.foto}}
+        <img class="z-depth-2 foto-empresa mx-auto" src="{{usuario.foto}}"
+            data-holder-rendered="true" onerror="this.src='/img/no-img.jpg';this.onerror='';">
+        {{/if}}
+        <h2 class="texto-verde">{{ usuario.nombre }}</h2>
+        <h3 class="text-dark font-weight-bold">{{ usuario.razonSocial }}</h3>
+        <h4 class="text-dark font-weight-bold">{{ usuario.descripcion }}</h4>
+        <h6 class="text-dark font-weight-bold">{{ usuario.direccion }}</h6>
+    </div>
+</div>
+<div class="row mb-3 mt-3">
+    <div class="col col-lg-8 mx-auto">
+        {{#if (ifeq usuario.perfilVerificado "Verificado")}}
+        <a href="/vacante/form/creacion" id="buttonCrearVacante" class="btn btn-warning btn-block">Crear vacante</a>
+        {{/if}}
+        <a href="/perfil/verificacion_cuenta" class="btn {{#if (ifeq usuario.perfilVerificado "Verificado")}}btn-success{{else}}btn-primary{{/if}} btn-block">{{#if (ifeq usuario.perfilVerificado "Verificado")}}Actualizar datos{{else}}Verificar cuenta{{/if}}</a>
+        <br>
+        <a href="/files/CartaCompromiso.docx" class="btn btn-warning btn-block"><i class="fa-solid fa-cloud-arrow-down fa-2x align-middle"></i>&nbsp; Descargar 'Carta compromiso'</a>
+        
+    </div>
+</div>

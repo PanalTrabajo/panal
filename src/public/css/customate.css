@@ -1,0 +1,94 @@
+body {
+    background: #9FB333;
+}
+
+.filtro {
+    opacity: 0.1;
+    filter: alpha(opacity=10); /* Para IE8 y anteriores */
+}
+
+.back-Yellow-Black {
+    background: rgb(218,206,28);
+    background: radial-gradient(circle, rgba(218,206,28,1) 0%, rgba(131,139,54,1) 95%);
+}
+
+.bordes-form {
+    border-radius: 10%;
+}
+.numero-notificacion {
+  position: absolute;
+  transform: scale(1.0);
+  transform-origin: top right;
+  right: .25rem;
+  margin-top: -.25rem;
+}
+
+.texto-verde {
+    color:darkgreen;
+    font-weight: bold;
+}
+
+.foto-perfil {
+        width:200px;
+        height:200px;
+        /*border-radius:200px;*/
+        border: 4px solid goldenrod;
+}
+
+.foto-empresa {
+    width:200px;
+    height:200px;
+    border: 4px solid goldenrod;
+}
+input[type=text], input[type=number], input[type=search], input[type=password] {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.texto-oscuro {
+    color: black;
+    font-weight: bold;
+}
+
+.texto-terminos {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.cursor-puntero {
+    cursor: pointer;
+}
+
+mark{
+    background: orange;
+    color: black;
+}
+
+/* CSS */
+.button-19 {
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-19:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.button-19:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
